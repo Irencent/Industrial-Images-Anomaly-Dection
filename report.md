@@ -153,4 +153,6 @@ AD in industrial images is a subset of problems of OOD, which is a broader term 
 
 # Total Performance Analysis
 
-**Memory Bank：** 在图像级别上
+1. **Memory Bank：** 在图像级别识别上性能最好。
+2. **Reconstruction：** 在像素级别识别上性能最好。能精确识别出异常区域边界。
+3. U-Net 有巨大价值
