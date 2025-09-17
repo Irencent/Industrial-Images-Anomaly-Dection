@@ -148,4 +148,9 @@ AD in industrial images is a subset of problems of OOD, which is a broader term 
 
 利用超大型的预训练模型强大的通用知识和泛化能力，在无需任何针对性训练的情况下实现对异常部分的检测。如：
 
-1.
+1. MAEDAY: 使用一个预训练好的掩码自编码器 MAE。输入图像，随机遮蔽一部分区域，让MAE还原图像。如果还原的图像与原来差异较大，则说明有异常。
+2. WinCLIP: 使用强大的视觉-语言模型CLIP。输入图像和文本（一张有损坏物体的图像），然后计算文本与图像的相似度。
+
+# Total Performance Analysis
+
+**Memory Bank：** 在图像级别上
