@@ -30,7 +30,7 @@ Patchcore: creates a large memory bank that is accessible to all patches.
 
 Select feature maps from two layers from Resnet, usually 2nd or 3nd.
 
-One point on the feature map stands for the feature of a patch from the original image. Average the features from an area center  ed with (a, b), which is taken as the feaure of (a, b)
+One point on the feature map stands for the feature of a patch from the original image. Average the features from an area centered with (a, b), which is taken as the feaure of (a, b).
 
 Do upsampling for the second feature map to match the size of the first one.
 
@@ -51,7 +51,7 @@ For each single patch of the test image, it find the closest match in the memory
 
 For all the closet distances, take the maxium as the initial anomaly score.
 
-Then it uses a formula to eliminate the influence of the "rare" normal patch.
+**Then it uses a formula to eliminate the influence of the "rare" normal patch.**
 
 **From scoring to Localizing**
 
